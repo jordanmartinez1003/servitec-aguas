@@ -13,7 +13,7 @@ export default ({ data }) => (
   <div className={classes.container}>
     <Nav
       white
-      title="Servicio Angelopolitano | Aire Acondicionado"
+      title="ServiTec Aguascalientes | Aire Acondicionado"
       description="Soporte Técnico, Instalación y Reparación de Aire Acondicionado a Domicilio en Aguascalientes."
       canonical="/aire-acondicionado"
     />

@@ -13,7 +13,7 @@ export default ({ data }) => (
   <div className={classes.container}>
     <Nav
       white
-      title="Servicio Angelopolitano | Lavado y Secado"
+      title="ServiTec Aguascalientes | Lavado y Secado"
       description="Soporte Técnico de Linea Blanca a Domicilio en Aguascalientes y area metropolitana."
       canonical="/lavado-secado"
     />

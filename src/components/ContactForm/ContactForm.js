@@ -29,7 +29,7 @@ export default () => {
     formData.append("message", message)
     Axios({
       method: "post",
-      url: "https://www.servicioangelopolitano.com/contact.php",
+      url: "https://www.servitecaguas.com/contact.php",
       data: formData,
       config: { headers: { "Content-Type": "multipart/form-data" } },
     })

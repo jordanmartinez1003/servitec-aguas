@@ -1,63 +1,18 @@
 import React, { useState } from "react"
 import classes from "./WideForm.module.less"
-import Axios from "axios"
-import { navigate } from "gatsby"
+import whatsapp from "images/whatsapp-g.svg"
+import phone_icon from "images/phone-b.svg"
 
-export default ({ options, producto }) => {
-  let [loading, setLoading] = useState(false)
-  let [name, setName] = useState("")
-  let [email, setEmail] = useState("")
-  let [phone, setPhone] = useState("")
-  let [service, setService] = useState("")
-
-  let sendForm = e => {
-    e.preventDefault()
-    if (!name || !phone) {
-      console.log("form incomplete")
-      alert("Por favor llena todos los campos requeridos.")
-      return
-    }
-    console.log("sending form")
-    setLoading(true)
-    let formData = new FormData()
-    formData.append("name", name)
-    formData.append("phone", phone)
-    formData.append("email", email)
-    formData.append("service", service)
-    formData.append("product", producto)
-    Axios({
-      method: "post",
-      url: "https://www.servicioangelopolitano.com/contact.php",
-      data: formData,
-      config: { headers: { "Content-Type": "multipart/form-data" } },
-    })
-      .then(result => {
-        console.log("result", result)
-        if (result.data === "success") {
-          navigate("/mensaje-enviado/")
-        } else throw result
-      })
-      .catch(error => {
-        setLoading(false)
-        alert(
-          "Hubo un error enviando la información, por favor contáctanos via teléfonica al 449 391 8113."
-        )
-        console.log("Error 2:", error)
-      })
-  }
-
+export default ({ options }) => {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="contacto">
       <div className={classes.content}>
-        <h2>
-          Agenda ahora mismo la visita de un técnico y recibe un{" "}
-          <b>10% de descuento.</b>
-        </h2>
-        <form
-          className={classes.form}
-          name="forma-descuento"
-          onSubmit={sendForm}
-        >
+        <h2>Contacto</h2>
+        <h3>
+          Contáctanos y solicita la visita de un técnico a tu domicilio.{" "}
+          <b>Aceptamos pago con tarjeta.</b>
+        </h3>
+        <form className={classes.form} name="forma-descuento">
           <div className={classes.inputs}>
             <div>
               <label htmlFor="nombre">NOMBRE</label>
@@ -67,7 +22,6 @@ export default ({ options, producto }) => {
                 required
                 type="text"
                 placeholder="Nombre"
-                onChange={e => setName(e.target.value)}
               />
             </div>
             <div>
@@ -78,7 +32,6 @@ export default ({ options, producto }) => {
                 required
                 type="email"
                 placeholder="Correo"
-                onChange={e => setEmail(e.target.value)}
               />
             </div>
             <div>
@@ -89,7 +42,6 @@ export default ({ options, producto }) => {
                 required
                 type="number"
                 placeholder="Teléfono"
-                onChange={e => setPhone(e.target.value)}
               />
             </div>
             <div>
@@ -99,10 +51,9 @@ export default ({ options, producto }) => {
                 name="servicio"
                 placeholder="Servicio"
                 defaultValue="Ninguna Opcion Seleccionada"
-                onChange={e => setService(e.target.value)}
               >
                 <option value="Ninguna Opcion Seleccionada" disabled>
-                  Selecciona un Servicio
+                  Selecciona una opción
                 </option>
                 {options.map((it, index) => (
                   <option value={it} key={index}>
@@ -113,18 +64,29 @@ export default ({ options, producto }) => {
             </div>
           </div>
           <div className={classes.hidden}>
-            <label htmlFor="producto">PRODUCTO</label>
-            <input
-              id="producto"
-              name="producto"
-              type="input"
-              value={producto}
-            />
             <input type="hidden" name="form-name" value="forma-descuento" />
           </div>
-          <button type="submit" onClick={sendForm} disabled={loading}>
-            {loading ? "Enviando..." : "Enviar"}
-          </button>
+          <div className={classes.buttons}>
+            <button type="submit">Enviar</button>
+            <a
+              rel="noopener noreferrer"
+              href="https://api.whatsapp.com/send?phone=+5214493485719&text=Estoy%20interesado%20en%20sus%20servicios."
+              className={classes.wpButton}
+              target="_blank"
+            >
+              <img src={whatsapp} alt="" />
+              WhatsApp
+            </a>
+            <a
+              rel="noopener noreferrer"
+              href="tel:4493485719"
+              className={classes.phoneButton}
+              target="_blank"
+            >
+              <img src={phone_icon} alt="" />
+              449 348 5719
+            </a>
+          </div>
         </form>
       </div>
     </div>
