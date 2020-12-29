@@ -33,94 +33,6 @@ export default ({ data }) => {
         <Img fluid={data.banner.childImageSharp.fluid} />
       </div>
       <div className={classes.logos}>
-        <h2>
-          La más alta <b>calidad</b> y <b>satisfacción</b> del mercado.
-        </h2>
-      </div>
-      <div className={classes.servicios}>
-        <div className={classes.service} id="refrigeracion">
-          <div className={classes.text}>
-            <h2>
-              <b>Instalación,</b> <b>mantenimiento,</b> <b>reparación</b> y{" "}
-              servicio técnico profesional para sistemas de <b>refrigeración</b>
-            </h2>
-            <div className={classes.options}>
-              <span>Refrigeradores Inverter</span>
-              <span>IceMaker</span>
-              <span>Enfriadores de Agua</span>
-              <span>Frigobares</span>
-              <span>Duplex</span>
-              <span>Congeladores</span>
-              <span>Refrigeradores Comerciales</span>
-              <span>Refresqueros</span>
-              <span>Y más...</span>
-            </div>
-          </div>
-          <Img fluid={data.fridge.childImageSharp.fluid} />
-        </div>
-
-        <div className={classes.serviceAlt} id="linea-blanca">
-          <div className={classes.text}>
-            <h2>
-              <b>Reparación,</b> <b>mantenimiento</b> y servicio técnico
-              profesional para <b>línea blanca</b>
-            </h2>
-            <div className={classes.options}>
-              <span>Lava-Secadoras</span>
-              <span>Lavadoras</span>
-              <span>Centros de Lavado</span>
-              <span>Secadoras</span>
-              <span>Y más...</span>
-            </div>
-          </div>
-          <Img fluid={data.machine.childImageSharp.fluid} />
-        </div>
-      </div>
-
-      <div className={classes.types}>
-        <h2>
-          Nuestros <b>Servicios</b>
-        </h2>
-        <div className={classes.type}>
-          <h3>Reparación</h3>
-          <p>
-            Su refrigerador tira agua, hace escarcha, no enciende o no enfría,
-            nuestro servicio técnico especializado consta del{" "}
-            <b>análisis y revisión</b> de la falla, brindándole un{" "}
-            <b>presupuesto competitivo</b>, garantía por escrito y una{" "}
-            <b>atención</b> personalizada, contamos con{" "}
-            <b>refacciones originales</b> para garantizar el buen funcionamiento
-            de su equipo.
-          </p>
-          <Link to="/#contacto">¡Lo Necesito!</Link>
-        </div>
-        <div className={classes.type}>
-          <h3>Mantenimiento</h3>
-          <p>
-            El <b>mantenimiento</b> en todos los equipos de <b>refrigeración</b>{" "}
-            es primordial y recomendablemente realizarlo una vez por año, de
-            preferencia antes de la temporada de calor de esta manera aseguramos{" "}
-            <b>larga vida</b> y <b>excelente funcionalidad</b>.
-          </p>
-          <Link to="/#contacto">¡Lo Necesito!</Link>
-        </div>
-        <div className={classes.type}>
-          <h3>Instalación</h3>
-          <p>
-            <p>
-              Contamos con <b>tecnico especializados</b> en refrigeracion,
-              nuestro personal esta constantemente actualizando para brindarle
-              el servicio en la <b>instalación</b> de sus equipos en base a los
-              lineamientos establecidos por el fabricante, garantizando un{" "}
-              <b>buen funcionamiento </b>de sus aparatos.
-            </p>
-          </p>
-          <Link to="/#contacto">¡Lo Necesito!</Link>
-        </div>
-      </div>
-
-      <WideForm options={["Linea Blanca", "Refrigeración"]} />
-      <div className={classes.logos}>
         <div>
           <Img fluid={data.logo1.childImageSharp.fluid} />
           <Img fluid={data.logo2.childImageSharp.fluid} />
@@ -136,6 +48,110 @@ export default ({ data }) => {
           <Img fluid={data.logo12.childImageSharp.fluid} />
         </div>
       </div>
+
+      <h2 className={classes.subtitle} id="refrigeracion">
+        Equipos de <b>Refrigeración</b>
+      </h2>
+
+      <div className={classes.servicios}>
+        <div className={classes.service}>
+          <div className={classes.text}>
+            <h2>
+              <b>Reparación</b> y servicio técnico profesional para
+            </h2>
+            <div className={classes.options}>
+              <span>Refrigeradores</span>
+              <span>Enfriadores de Agua</span>
+              <span>Frigobares</span>
+              <span>Duplex</span>
+              <span>Congeladores</span>
+            </div>
+          </div>
+          <Img fluid={data.fridge.childImageSharp.fluid} />
+        </div>
+      </div>
+
+      <div className={classes.types}>
+        <div className={classes.type}>
+          <h3>Reparación</h3>
+          <p>
+            ¿Su refrigerador no enfría, no enciende o hace escarcha? Nuestro
+            servicio le ofrece el <b>análisis y revisión</b> de su aparato,
+            brindándole una <b>garantía por escrito</b> ya que contamos con{" "}
+            <b>refacciones originales</b> para ofrecerle un excelente
+            funcionamiento de su equipo.
+          </p>
+          <Link to="/#contacto">¡Lo Necesito!</Link>
+        </div>
+        <div className={classes.type}>
+          <h3>Mantenimiento</h3>
+          <p>
+            El mantenimiento para todos los equipos de refrigeración es
+            recomendable realizarlo <b>una vez por año</b>, de esta manera
+            aseguramos un <b>excelente funcionamiento</b>.
+          </p>
+          <Link to="/#contacto">¡Lo Necesito!</Link>
+        </div>
+      </div>
+
+      <h2 className={classes.subtitle} id="linea-blanca">
+        Línea <b>Blanca</b>
+      </h2>
+
+      <div className={classes.servicios}>
+        <div className={classes.serviceAlt}>
+          <div className={classes.text}>
+            <h2>
+              <b>Reparación,</b> <b>Mantenimiento</b> y servicio técnico
+              profesional para <b>línea blanca</b>
+            </h2>
+            <div className={classes.options}>
+              <span>Lavadoras</span>
+              <span>Lava-Secadoras</span>
+              <span>Centros de Lavado</span>
+              <span>Secadoras</span>
+            </div>
+          </div>
+          <Img fluid={data.machine.childImageSharp.fluid} />
+        </div>
+      </div>
+
+      <div className={classes.types}>
+        <div className={classes.type}>
+          <h3>Reparación</h3>
+          <p>
+            Nuestro <b>servicio técnico</b> realiza reparaciones{" "}
+            <b>rápidas y urgentes</b> dandole solución a cualquier tipo de
+            problema que se presente, ofreciendole <b>garantía por escrito</b> y
+            una atención de calidad. Contamos con <b>refacciones originales</b>.
+          </p>
+          <Link to="/#contacto">¡Lo Necesito!</Link>
+        </div>
+        <div className={classes.type}>
+          <h3>Mantenimiento</h3>
+          <p>
+            Realizamos mantenimientos que ayudan a <b>prevenir fallas</b> y de
+            esta manera aseguramos la <b>larga vida</b> de su aparato y
+            excelente funcionalidad.
+          </p>
+          <Link to="/#contacto">¡Lo Necesito!</Link>
+        </div>
+        <div className={classes.type}>
+          <h3>Instalación</h3>
+          <p>
+            <p>
+              Contamos con personal <b>totalmente capacitado</b> en línea
+              blanca. Nuestro servicio en la instalación de sus equipos se rige
+              en base a las <b>normas</b> establecidas por el fabricante.
+            </p>
+          </p>
+          <Link to="/#contacto">¡Lo Necesito!</Link>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <WideForm options={["Linea Blanca", "Refrigeración"]} />
     </div>
   )
 }
