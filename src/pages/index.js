@@ -41,7 +41,7 @@ export default ({ data }) => {
         <div className={classes.service} id="refrigeracion">
           <div className={classes.text}>
             <h2>
-              <b>Instalación</b>, <b>mantenimiento</b>, <b>reparación</b> y{" "}
+              <b>Instalación,</b> <b>mantenimiento,</b> <b>reparación</b> y{" "}
               servicio técnico profesional para sistemas de <b>refrigeración</b>
             </h2>
             <div className={classes.options}>
@@ -62,7 +62,7 @@ export default ({ data }) => {
         <div className={classes.serviceAlt} id="linea-blanca">
           <div className={classes.text}>
             <h2>
-              <b>Reparación</b>, <b>mantenimiento</b> y servicio técnico
+              <b>Reparación,</b> <b>mantenimiento</b> y servicio técnico
               profesional para <b>línea blanca</b>
             </h2>
             <div className={classes.options}>
