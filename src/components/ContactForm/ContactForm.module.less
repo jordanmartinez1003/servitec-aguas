@@ -1,0 +1,172 @@
+@import "../../stylesheets/variables.less";
+.container {
+  padding: 60px 15px 140px;
+  background: @darkest;
+  h3 {
+    text-align: left;
+    padding: 10px 0px 0px;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    color: @primary;
+    b {
+      background-image: url(images/blur.jpg);
+      background-size: 100% 100%;
+      background-position: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 5rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+  }
+  h4 {
+    color: white;
+    font-size: 1.4rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    font-weight: 300;
+    padding-bottom: 30px;
+    b {
+      color: #8edcff;
+    }
+  }
+  .content {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  form {
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      resize: none;
+      color: whitesmoke;
+      font-size: 1.2rem;
+      font-weight: 300 !important;
+    }
+    label {
+      color: #8edcff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    button {
+      padding: 3px 20px;
+      margin: auto;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.4rem;
+      background: @primary;
+      outline: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  .details {
+    > a {
+      font-size: 3.7rem;
+      color: white;
+      font-weight: 500;
+    }
+    p {
+      color: white;
+      padding: 40px 0px 0px 0px;
+      max-width: 320px;
+      font-size: 0.9rem;
+    }
+    .buttons {
+      display: flex;
+      align-items: flex-start;
+      padding-top: 20px;
+      flex-direction: column;
+      button {
+        display: inline-flex;
+        align-items: center;
+        background: white;
+        padding: 10px;
+        height: 38px;
+        width: 190px;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        color: #1f73be;
+        font-weight: 700;
+        border: none;
+        margin-top: 8px;
+        img {
+          width: 24px;
+          object-fit: contain;
+          margin-right: 10px;
+        }
+      }
+    }
+    a:nth-child(2) button img {
+      width: 18px !important;
+      padding-right: 4px;
+      margin-left: 2px;
+    }
+  }
+}
+@media (max-width: 660px) {
+  .container {
+    padding-bottom: 100px;
+    h3 {
+      font-size: 4rem;
+    }
+    .details {
+      p {
+        max-width: 100%;
+      }
+      .buttons {
+        .wpButton,
+        .phoneButton {
+          position: fixed;
+          bottom: 0;
+          z-index: 60;
+          width: 50vw;
+          left: 0;
+          button {
+            background: @primary;
+            color: white;
+            width: 100%;
+            border-radius: 0;
+            justify-content: center;
+            height: 40px;
+
+            box-shadow: 0px 0px 10px 0px #00000017;
+          }
+        }
+        .phoneButton {
+          right: 0;
+          left: unset;
+          button {
+            border-left: 1px solid white;
+          }
+          img {
+            filter: brightness(10);
+          }
+        }
+      }
+    }
+    .content {
+      flex-direction: column;
+      form {
+        padding-top: 100px;
+        width: 100%;
+      }
+    }
+  }
+}
