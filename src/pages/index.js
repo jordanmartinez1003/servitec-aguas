@@ -170,14 +170,14 @@ export const query = graphql`
         }
       }
     }
-    fridge: file(relativePath: { eq: "refri-abierto.jpeg" }) {
+    fridge: file(relativePath: { eq: "fridge_open.webp" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    machine: file(relativePath: { eq: "lavadoras2.jpeg" }) {
+    machine: file(relativePath: { eq: "washing_open.webp" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp

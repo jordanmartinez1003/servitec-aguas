@@ -12,7 +12,7 @@ export default ({ options }) => {
           Contáctanos y solicita la visita de un técnico a tu domicilio.{" "}
           <b>Aceptamos pago con tarjeta.</b>
         </h3>
-        <form className={classes.form} name="forma-descuento">
+        <form className={classes.form} name="forma-contacto" data-netlify="true" method="post" action="/mensaje-enviado">
           <div className={classes.inputs}>
             <div>
               <label htmlFor="nombre">NOMBRE</label>
@@ -64,7 +64,7 @@ export default ({ options }) => {
             </div>
           </div>
           <div className={classes.hidden}>
-            <input type="hidden" name="form-name" value="forma-descuento" />
+            <input type="hidden" name="form-name" value="forma-contacto" />
           </div>
           <div className={classes.buttons}>
             <button type="submit">Enviar</button>
