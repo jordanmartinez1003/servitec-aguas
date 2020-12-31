@@ -12,44 +12,33 @@ export default ({ options }) => {
           Contáctanos y solicita la visita de un técnico a tu domicilio.{" "}
           <b>Aceptamos pago con tarjeta.</b>
         </h3>
-        <form className={classes.form} name="forma-contacto" data-netlify="true" method="post" action="/mensaje-enviado">
+        <form
+          className={classes.form}
+          name="forma-contacto"
+          data-netlify="true"
+          method="post"
+          action="/mensaje-enviado"
+          netlify-honeypot="bot-field"
+        >
           <div className={classes.inputs}>
+            <input type="hidden" name="bot-field" />
             <div>
-              <label htmlFor="nombre">NOMBRE</label>
-              <input
-                id="nombre"
-                name="nombre"
-                required
-                type="text"
-                placeholder="Nombre"
-              />
+              <label htmlFor="nombre">Nombre</label>
+              <input id="nombre" name="nombre" required type="text" />
             </div>
             <div>
-              <label htmlFor="correo">CORREO</label>
-              <input
-                id="correo"
-                name="correo"
-                required
-                type="email"
-                placeholder="Correo"
-              />
+              <label htmlFor="correo">Correo</label>
+              <input id="correo" name="correo" required type="email" />
             </div>
             <div>
-              <label htmlFor="telefono">TELÉFONO</label>
-              <input
-                id="telefono"
-                name="telefono"
-                required
-                type="number"
-                placeholder="Teléfono"
-              />
+              <label htmlFor="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" required type="number" />
             </div>
             <div>
-              <label htmlFor="servicio">SERVICIO</label>
+              <label htmlFor="servicio">Servicio</label>
               <select
                 id="servicio"
                 name="servicio"
-                placeholder="Servicio"
                 defaultValue="Ninguna Opcion Seleccionada"
               >
                 <option value="Ninguna Opcion Seleccionada" disabled>

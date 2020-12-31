@@ -33,11 +33,13 @@ export default () => {
         onClick={() => setOpen(false)}
         src={closeIcon}
         className={classes.closeButton}
+        alt="icono menu"
       />
       <img
         onClick={() => setOpen(true)}
         src={menu}
         className={classes.menuButton}
+        alt="icono menu"
       />
     </div>
   )

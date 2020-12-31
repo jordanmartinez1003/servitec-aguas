@@ -29,22 +29,22 @@ export default ({ data }) => {
             </a>
           </div>
         </h1>
-        <Img fluid={data.banner.childImageSharp.fluid} />
+        <Img fluid={data.banner.childImageSharp.fluid} alt="lavadora"/>
       </div>
       <div className={classes.logos}>
         <div>
-          <Img fluid={data.logo1.childImageSharp.fluid} />
-          <Img fluid={data.logo2.childImageSharp.fluid} />
-          <Img fluid={data.logo3.childImageSharp.fluid} />
-          <Img fluid={data.logo4.childImageSharp.fluid} />
-          <Img fluid={data.logo5.childImageSharp.fluid} />
-          <Img fluid={data.logo6.childImageSharp.fluid} />
-          <Img fluid={data.logo7.childImageSharp.fluid} />
-          <Img fluid={data.logo8.childImageSharp.fluid} />
-          <Img fluid={data.logo9.childImageSharp.fluid} />
-          <Img fluid={data.logo10.childImageSharp.fluid} />
-          <Img fluid={data.logo11.childImageSharp.fluid} />
-          <Img fluid={data.logo12.childImageSharp.fluid} />
+          <Img fluid={data.logo1.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo2.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo3.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo4.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo5.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo6.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo7.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo8.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo9.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo10.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo11.childImageSharp.fluid} alt="logo"/>
+          <Img fluid={data.logo12.childImageSharp.fluid} alt="logo"/>
         </div>
       </div>
 
@@ -66,7 +66,7 @@ export default ({ data }) => {
               <span>Congeladores</span>
             </div>
           </div>
-          <Img fluid={data.fridge.childImageSharp.fluid} />
+          <Img fluid={data.fridge.childImageSharp.fluid} alt="refrigerador"/>
         </div>
       </div>
 
@@ -111,7 +111,7 @@ export default ({ data }) => {
               <span>Secadoras</span>
             </div>
           </div>
-          <Img fluid={data.machine.childImageSharp.fluid} />
+          <Img fluid={data.machine.childImageSharp.fluid} alt="lavadora"/>
         </div>
       </div>
 
