@@ -52,6 +52,10 @@ export default ({ options }) => {
               </select>{" "}
             </div>
           </div>
+          <div className={classes.textarea}>
+            <label htmlFor="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" />
+          </div>
           <div className={classes.hidden}>
             <input type="hidden" name="form-name" value="forma-contacto" />
           </div>
