@@ -12,8 +12,8 @@ export default ({ data }) => {
     <div className={classes.container}>
       <Nav
         white
-        title="ServiTec Aguascalientes | Reparación y mantenimiento de línea blanca."
-        description="Reparación y mantenimiento profesional de línea blanca, refrigeración y aire acondicionado."
+        title="ServiTec Aguascalientes | Reparación y mantenimiento de línea blanca y refrigeración"
+        description="Reparación, mantenimiento e instalación profesional de línea blanca y equipos de refrigeración."
         canonical=""
       />
       <div className={classes.intro}>

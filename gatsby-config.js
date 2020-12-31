@@ -3,7 +3,7 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     title: `ServiTec Aguascalientes | Reparación y mantenimiento de línea blanca.`,
-    description: `Reparación y mantenimiento profesional de línea blanca, refrigeración y aire acondicionado.`,
+    description: `Reparación y mantenimiento profesional de línea blanca y refrigeración`,
     author: `@irvingdc`,
     siteUrl: `https://www.servitecaguas.com`,
   },
