@@ -54,10 +54,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-PEYQ0SC2E0",
-        head: false,
+        trackingIds: [
+          "G-PEYQ0SC2E0", // Google Analytics / GA
+        ],
       },
     },
     {
