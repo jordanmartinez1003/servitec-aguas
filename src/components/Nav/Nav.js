@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet"
 import classes from "./Nav.module.less"
 import NavContent from "../NavContent/NavContent"
 
-const NETLIFY_URL = "https://servitecaguas.netlify.app"
-const REAL_URL = "https://www.servitecaguas.com"
+const NETLIFY_URL = "https://servimasterpuebla.netlify.app"
+const REAL_URL = "https://www.servimasterpuebla.com"
 
 export default ({ title, canonical, description, white }) => {
   return (
@@ -15,7 +15,7 @@ export default ({ title, canonical, description, white }) => {
         <title>{title}</title>
         <link
           rel="canonical"
-          href={"https://www.servitecaguas.com" + canonical}
+          href={"https://www.servimasterpuebla.com" + canonical}
         />
         <meta name="description" content={description} />
         <script></script>

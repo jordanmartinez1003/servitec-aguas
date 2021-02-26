@@ -2,10 +2,10 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `ServiTec Aguascalientes | Reparación y mantenimiento de línea blanca.`,
+    title: `ServiMaster Puebla | Reparación y mantenimiento de línea blanca.`,
     description: `Reparación y mantenimiento profesional de línea blanca y refrigeración`,
     author: `@irvingdc`,
-    siteUrl: `https://www.servitecaguas.com`,
+    siteUrl: `https://www.servimasterpuebla.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,8 +14,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.servitecaguas.com",
-        sitemap: "https://www.servitecaguas.com/sitemap.xml",
+        host: "https://www.servimasterpuebla.com",
+        sitemap: "https://www.servimasterpuebla.com/sitemap.xml",
         policy: /*process.env.GATSBY_ACTIVE_ENV === "QA"
             ? [{ userAgent: "*", disallow: ["/"] }]
             : */ [

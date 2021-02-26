@@ -26,11 +26,10 @@
 		$mail = new PHPMailer();
 		$mail->CharSet="UTF-8";
 	    
-		$mail->AddReplyTo("servicios.angelopolitano@gmail.com","servicios.angelopolitano@gmail.com");
-		$mail->SetFrom('servicios.angelopolitano@gmail.com', "servicios.angelopolitano@gmail.com");
+		$mail->AddReplyTo("jordanmartinez1003@gmail.com","jordanmartinez1003@gmail.com");
+		$mail->SetFrom('info@servimasterpuebla.com', "info@servimasterpuebla.com");
 		$mail->AddBCC("irvingedc@gmail.com" , "Irving Diaz");
-		//$mail->AddAddress("servicios.angelopolitano@gmail.com", "servicios.angelopolitano@gmail.com");
-		$mail->AddAddress('iedc@outlook.com', "iedc@outlook.com");
+		$mail->AddAddress('jordanmartinez1003@gmail.com', "jordanmartinez1003@gmail.com");
 		$mail->Subject    = $title;
 		$mail->AltBody    = "To view the message properly, please use an HTML compatible email viewer.";
 		$mail->MsgHTML($body);                                           

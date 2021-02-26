@@ -12,19 +12,19 @@ export default ({ data }) => {
     <div className={classes.container}>
       <Nav
         white
-        title="ServiTec Aguascalientes | Reparación y mantenimiento de línea blanca y refrigeración"
+        title="ServiMaster Puebla | Reparación y mantenimiento de línea blanca y refrigeración"
         description="Reparación, mantenimiento e instalación profesional de línea blanca y equipos de refrigeración."
         canonical=""
       />
       <div className={classes.intro}>
         <h1>
           <strong>Reparación de línea blanca y refrigeración</strong> en
-          Aguascalientes.
+          Puebla.
           <div>
-            <a rel="noopener noreferrer" href="tel:4493485719">
+            <a rel="noopener noreferrer" href="tel:2215212177">
               <i>
                 <img src={phone} alt="" />
-                <b> 449 348 5719</b>
+                <b> 221 521 2177</b>
               </i>
             </a>
           </div>
