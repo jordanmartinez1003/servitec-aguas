@@ -63,7 +63,7 @@ export default ({ options }) => {
             <button type="submit">Enviar</button>
             <a
               rel="noopener noreferrer"
-              href="https://api.whatsapp.com/send?phone=+5214493485719&text=Estoy%20interesado%20en%20sus%20servicios."
+              href="https://api.whatsapp.com/send?phone=+5212215212177&text=Estoy%20interesado%20en%20sus%20servicios."
               className={classes.wpButton}
               target="_blank"
             >
@@ -72,12 +72,12 @@ export default ({ options }) => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="tel:4493485719"
+              href="tel:2215212177"
               className={classes.phoneButton}
               target="_blank"
             >
               <img src={phone_icon} alt="" />
-              449 348 5719
+              221 521 2177
             </a>
           </div>
         </form>
